@@ -5,9 +5,9 @@ Added the Collection of APIs in "e-commerce.postman_collection.json".
 APIs:
 1. Create User:
 
-POST localhost:8081/users
+	POST localhost:8081/users
 
-BODY:
+	BODY:
 
 	{
 		"emailId":"senmitaly",
@@ -17,9 +17,9 @@ BODY:
 		
 2. Create Item:
 
-POST localhost:8081/items
+	POST localhost:8081/items
 
-BODY:
+	BODY:
 
 	{
 		"itemName":"cardboard",
@@ -29,17 +29,18 @@ BODY:
 		
 3. Get all items:
 
-GET localhost:8081/items/
+	GET localhost:8081/items/
 	 
 4. Get item by ID:
 
-GET localhost:8081/items/1
+	GET localhost:8081/items/1
 	 
 5. Update item:
 
-PUT localhost:8081/items/4
+	PUT localhost:8081/items/4
 
-BODY:
+	BODY:
+
  	{
 		"itemId":4,
 		"itemName":"Book",
@@ -48,11 +49,14 @@ BODY:
 	}
 		
 6. Delete item By ID:
-DELETE localhost:8081/items/1
+	
+	DELETE localhost:8081/items/1
 	 
 7. Order Item:
-POST localhost:8081/orders?emailId=senmitaly
-BODY:
+	
+	POST localhost:8081/orders?emailId=senmitaly
+
+	BODY:
 
 	[
 		{
@@ -63,4 +67,4 @@ BODY:
 
 8. Get all orders:
 
-GET localhost:8081/orders?emailId=senmitaly
+	GET localhost:8081/orders?emailId=senmitaly
