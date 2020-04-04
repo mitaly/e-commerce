@@ -1,0 +1,282 @@
+{
+	"id": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+	"name": "e-commerce",
+	"description": "",
+	"order": [
+		"fa2d6780-9b7f-037b-9c65-9081fea2a945",
+		"70906c1b-41b2-34bb-78cf-dc2645a7448d",
+		"7386992e-ed1c-5c7f-6095-b1b2b10a8c82",
+		"04b60e32-c333-961b-9ea1-efdcba61e70f",
+		"995edca8-f95a-7402-a27e-0502bed403ec",
+		"348214f9-7feb-9fca-4aea-e15d097cb2c9",
+		"c6570304-5ddd-f394-1cf6-83dce82e6463",
+		"7bc578b5-baa0-a210-d601-3ffe758d5df0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1585921956576,
+	"owner": "1668723",
+	"public": false,
+	"requests": [
+		{
+			"id": "04b60e32-c333-961b-9ea1-efdcba61e70f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/items/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get item by id",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1585922349351,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"itemName\":\"book\",\n\t\"price\":\"20\",\n\t\"quantity\": \"12\"\n}"
+		},
+		{
+			"id": "348214f9-7feb-9fca-4aea-e15d097cb2c9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/items/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585922637804,
+			"name": "delete item by id",
+			"description": "",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"responses": [],
+			"rawModeData": "{\n\t\"itemName\":\"book\",\n\t\"price\":\"20\",\n\t\"quantity\": \"12\"\n}"
+		},
+		{
+			"id": "70906c1b-41b2-34bb-78cf-dc2645a7448d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/items",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585926269049,
+			"name": "Create item",
+			"description": "",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"responses": [],
+			"rawModeData": "{\n\t\"itemName\":\"notebook\",\n\t\"price\":\"20\",\n\t\"quantity\": \"12\"\n}"
+		},
+		{
+			"id": "7386992e-ed1c-5c7f-6095-b1b2b10a8c82",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/items/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get all items",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1585922339759,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"itemName\":\"book\",\n\t\"price\":\"20\",\n\t\"quantity\": \"12\"\n}"
+		},
+		{
+			"id": "7bc578b5-baa0-a210-d601-3ffe758d5df0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/orders?emailId=senmitaly",
+			"queryParams": [
+				{
+					"key": "emailId",
+					"value": "senmitaly",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "get all orders",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1585927669147,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"itemName\":\"book\",\n\t\"price\":\"20\",\n\t\"quantity\": \"12\"\n}"
+		},
+		{
+			"id": "995edca8-f95a-7402-a27e-0502bed403ec",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/items/4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585923319799,
+			"name": "update item",
+			"description": "",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"responses": [],
+			"rawModeData": "{\n\t\"itemId\":4,\n\t\"itemName\":\"Book\",\n\t\"price\":\"20\",\n\t\"quantity\": \"40\"\n}"
+		},
+		{
+			"id": "c6570304-5ddd-f394-1cf6-83dce82e6463",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/orders?emailId=senmitaly",
+			"queryParams": [
+				{
+					"key": "emailId",
+					"value": "senmitaly",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1585929092849,
+			"name": "order items",
+			"description": "",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"responses": [],
+			"rawModeData": "[\n\t{\n\t\t\"itemId\":2,\t\n\t\t\"quantity\":2\n\t}\n]"
+		},
+		{
+			"id": "fa2d6780-9b7f-037b-9c65-9081fea2a945",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8081/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c101bd6d-936f-cfaa-38d4-493b8838c0d6",
+			"data": [],
+			"dataMode": "raw",
+			"name": "create user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1585921958331,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"emailId\":\"senmitaly\",\n\t\"name\":\"Mitaly Sen\",\n\t\"password\": \"password\"\n}"
+		}
+	]
+}
